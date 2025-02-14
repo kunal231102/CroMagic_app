@@ -23,7 +23,7 @@ Cromagic is a powerful image processing application that utilizes state-of-the-a
 
 1. **Clone the Repository:**
    ```sh
-   git clone https://github.com/yourusername/cromagic.git
+   git clone https://github.com/kunal231102/cromagic.git
    cd cromagic
    ```
 
