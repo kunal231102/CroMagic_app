@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_gravity="start"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp">
+
+    <ImageView
+        android:id="@+id/chatBot_img"
+        android:layout_width="40dp"
+        android:layout_height="50dp"
+        android:src="@drawable/chatbot"
+        android:layout_marginStart="7dp"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:elevation="8dp"
+        app:cardBackgroundColor="@color/unknown"
+        app:cardCornerRadius="8dp">
+
+        <TextView
+            android:id="@+id/chatBotMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:padding="3dp"
+            android:textSize="16sp"
+            android:fontFamily="sans-serif-condensed"
+            android:layout_gravity="center"
+            android:text="@string/chatbots_message"
+            android:textColor="@color/white"/>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/download"
+        android:icon="@drawable/ic_download"
+        android:title="@string/download_menu"
+        android:onClick="download"/>
+    <item
+        android:id="@+id/share"
+        android:icon="@drawable/ic_share"
+        android:title="@string/share_menu"
+        android:onClick="share"/>
+    <item
+        android:id="@+id/help"
+        android:icon="@drawable/ic_help"
+        android:title="@string/help"
+        android:onClick="help"/>
+    <item
+        android:id="@+id/report_bug"
+        android:icon="@drawable/ic_bug"
+        android:title="@string/report_bug"
+        android:onClick="reportBug"/>
+    <item
+        android:id="@+id/about"
+        android:icon="@drawable/about_app"
+        android:title="@string/about"
+        android:onClick="about"/>
+</menu>

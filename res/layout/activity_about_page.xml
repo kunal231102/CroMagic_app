@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="25dp"
+    android:paddingBottom="20dp"
+    android:paddingTop="20dp"
+    android:background="@color/subtleBlue1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginTop="20dp">
+
+        <ImageView
+            android:id="@+id/about_logo"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/chromagic_app_logo"
+            android:layout_gravity="center"
+            android:layout_marginBottom="16dp"
+            android:contentDescription="@string/app_logo" />
+
+        <TextView
+            android:id="@+id/about_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/about_chromagic"
+            android:textSize="24sp"
+            android:fontFamily="sans-serif-black"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:layout_marginBottom="10dp" />
+
+        <TextView
+            android:id="@+id/about_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/about_desc"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="center"
+            android:textColor="@color/light_white"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:id="@+id/key_features_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/key_features"
+            android:textSize="18sp"
+            android:fontFamily="sans-serif-black"
+            android:textColor="@color/white"
+            android:layout_marginTop="18dp"
+            android:layout_marginBottom="10dp" />
+
+        <TextView
+            android:id="@+id/key_features"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/key_features_desc"
+            android:textSize="14sp"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="start"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/light_white"
+            android:layout_marginBottom="12dp" />
+
+        <TextView
+            android:id="@+id/mission_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/our_mission"
+            android:textSize="18sp"
+            android:layout_marginTop="18dp"
+            android:fontFamily="sans-serif-black"
+            android:textColor="@color/white"
+            android:layout_marginBottom="10dp" />
+
+        <TextView
+            android:id="@+id/mission_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/our_mission_desc"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:fontFamily="sans-serif-condensed"
+            android:textColor="@color/light_white"
+            android:layout_marginBottom="18dp" />
+
+        <TextView
+            android:id="@+id/whyChroMagicTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/why_chromagic"
+            android:textSize="18sp"
+            android:fontFamily="sans-serif-black"
+            android:textColor="@color/white"
+            android:layout_marginTop="18dp"
+            android:layout_marginBottom="10dp" />
+
+
+        <TextView
+            android:id="@+id/whyChroMagicDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/why_chromagic_desc"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:fontFamily="sans-serif-condensed"
+            android:textColor="@color/light_white"
+            android:layout_marginBottom="18dp" />
+
+        <TextView
+            android:id="@+id/feedback_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/feedback_and_support"
+            android:textSize="18sp"
+            android:fontFamily="sans-serif-black"
+            android:textColor="@color/white"
+            android:layout_marginTop="18dp"
+            android:layout_marginBottom="10dp" />
+
+
+        <TextView
+            android:id="@+id/feedback_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/feedback_support_desc"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:fontFamily="sans-serif-condensed"
+            android:textColor="@color/light_white"
+            android:layout_marginBottom="18dp" />
+
+        <TextView
+            android:id="@+id/chatSupport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/chat_support"
+            android:textSize="18sp"
+            android:layout_marginTop="18dp"
+            android:fontFamily="sans-serif-black"
+            android:textColor="@color/white"
+            android:layout_marginBottom="10dp" />
+
+
+        <TextView
+            android:id="@+id/chatSupport_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/chatsupport_desc"
+            android:textSize="14sp"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="center"
+            android:textColor="@color/light_white"
+            android:layout_marginBottom="18dp" />
+
+        <TextView
+            android:id="@+id/aboutDevelopers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/about_developers"
+            android:textSize="18sp"
+            android:layout_marginTop="18dp"
+            android:fontFamily="sans-serif-black"
+            android:textColor="@color/white"
+            android:layout_marginBottom="10dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="18dp">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="75dp"
+                android:src="@drawable/riddhi_photo"
+                android:layout_marginStart="5dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/about_riddhi"
+                android:textSize="14sp"
+                android:layout_marginStart="12dp"
+                android:textColor="@color/light_white"
+                android:fontFamily="sans-serif-condensed"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="72dp"
+                android:src="@drawable/arkajit_photo"
+                android:layout_marginStart="5dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/about_arkajit"
+                android:textSize="14sp"
+                android:layout_marginStart="12dp"
+                android:textColor="@color/light_white"
+                android:fontFamily="sans-serif-condensed"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="75dp"
+                android:src="@drawable/kunal_photo"
+                android:layout_marginStart="5dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/about_kunal"
+                android:textSize="14sp"
+                android:textColor="@color/light_white"
+                android:layout_marginStart="12dp"
+                android:layout_marginBottom="25dp"
+                android:fontFamily="sans-serif-condensed"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/contactUsTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/contact_us"
+            android:textSize="18sp"
+            android:layout_marginTop="18dp"
+            android:fontFamily="sans-serif-black"
+            android:textColor="@color/white"
+            android:layout_marginBottom="10dp" />
+
+
+        <TextView
+            android:id="@+id/contactUs_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/contact_us_desc"
+            android:textSize="14sp"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="center"
+            android:textColor="@color/blue"
+            android:autoLink="email"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_marginBottom="18dp" />
+
+        <TextView
+            android:id="@+id/basedOn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/based_on"
+            android:textSize="14sp"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:gravity="center"
+            android:layout_marginTop="40dp"
+            android:textColor="@color/white"
+            android:layout_marginBottom="7dp"/>
+
+        <TextView
+            android:id="@+id/appVersion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/app_version"
+            android:textSize="12sp"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:layout_marginTop="12dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:layout_marginBottom="5dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="25dp"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/copyright"
+                android:layout_marginStart="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name1"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:fontFamily="sans-serif-black"
+                android:layout_marginStart="5dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/all_rights_reserved"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:fontFamily="sans-serif-black"
+                android:layout_marginStart="5dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

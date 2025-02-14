@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/changeLanguage"
+        android:icon="@drawable/change_language_icon"
+        android:title="@string/change_language"
+        android:onClick="changeLanguage"/>
+    <item
+        android:id="@+id/lightMode"
+        android:icon="@drawable/light_mode_icon"
+        android:title="@string/light_mode"
+        android:onClick="lightMode"/>
+    <item
+        android:id="@+id/showMetaData"
+        android:icon="@drawable/meta_data_icon"
+        android:title="@string/photo_details"
+        android:onClick="showMetaData"/>
+</menu>

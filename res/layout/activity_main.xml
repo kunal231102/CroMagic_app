@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/subtleBlue"
+    tools:context=".MainActivity">
+
+    <!-- Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="0dp"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/subtleBlue1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Header Layout -->
+    <LinearLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="0dp"
+        android:layout_height="?attr/actionBarSize"
+        android:orientation="horizontal"
+        android:padding="15dp"
+        android:gravity="center_vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:id="@+id/appTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:fontFamily="sans-serif"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/selectFromGallery"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="145dp"
+            android:contentDescription="@string/selectFromGallery"
+            android:src="@drawable/select_from_gallery"
+            app:tint="@color/white"
+            android:tooltipText="Select Photo From Gallery"/>
+
+        <ImageView
+            android:id="@+id/takeAPictureWithCamera"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="25dp"
+            android:contentDescription="@string/takeImageWithCamera"
+            android:src="@drawable/camera_photo"
+            app:tint="@color/white"
+            android:tooltipText="Take Photo Using Camera"/>
+
+        <ImageView
+            android:id="@+id/dropdown_menu"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="20dp"
+            android:contentDescription="@string/menu"
+            android:src="@drawable/three_dots"
+            app:tint="@color/white"
+            app:popupTheme="@style/CustomPopupMenu"
+            android:tooltipText="Menu Options"/>
+
+    </LinearLayout>
+
+    <!-- Placeholder Frame -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/placeholderFrame"
+        android:layout_width="0dp"
+        android:layout_height="615dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="5dp"
+        android:background="@color/subtleBlue1"
+        app:layout_constraintTop_toBottomOf="@id/headerLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_margin="10dp"
+            android:background="@color/subtleBlue"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <!-- Circle with + symbol -->
+            <TextView
+                android:id="@+id/addImageButton"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/circle_subtle_blue1"
+                android:gravity="center"
+                android:text="@string/plus"
+                android:textColor="@color/subtleBlue"
+                android:textSize="35sp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <!-- Dynamic ImageView -->
+        <com.jsibbold.zoomage.ZoomageView
+            android:id="@+id/dynamicImageView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_margin="10dp"
+            android:background="@color/subtleBlue"
+            android:scaleType="fitCenter"
+            android:visibility="gone"
+            app:zoomage_restrictBounds="false"
+            app:zoomage_animateOnReset="true"
+            app:zoomage_autoCenter="true"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/ButtonsHolder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/placeholderFrame"
+        app:layout_constraintBottom_toTopOf="@id/footerLayout">
+
+    <!-- Colorize Button in a Square -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/colorizeButtonLayout"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/white_border_subtle_bg">
+
+                <ImageView
+                    android:id="@+id/colorizeBtn"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="10dp"
+                    android:contentDescription="@string/colorizeImage"
+                    android:src="@drawable/magic_wand"
+                    android:tooltipText="Colorize"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:tint="@color/white" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/enhancePixelsButtonLayout"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginStart="30dp"
+            android:background="@drawable/white_border_subtle_bg">
+
+            <ImageView
+                android:id="@+id/enhancePixelsBtn"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:contentDescription="@string/colorizeImage"
+                android:src="@drawable/enhance_pixels_icon"
+                android:tooltipText="Enhance Pixels"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:tint="@color/white" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/removeBgButtonLayout"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginStart="30dp"
+            android:background="@drawable/white_border_subtle_bg">
+
+            <ImageView
+                android:id="@+id/removeBg_Btn"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:contentDescription="@string/colorizeImage"
+                android:src="@drawable/remove_bg_icon"
+                android:tooltipText="Remove Background"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:tint="@color/white" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+    <!-- Bottom Bar -->
+    <LinearLayout
+        android:id="@+id/footerLayout"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:padding="15dp"
+        android:gravity="center_vertical"
+        android:background="@color/subtleBlue1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageView
+            android:id="@+id/history"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="35dp"
+            android:contentDescription="@string/history"
+            android:src="@drawable/history"
+            app:tint="@color/white"
+            android:tooltipText="History"/>
+
+        <ImageView
+            android:id="@+id/undoBtn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="40dp"
+            android:contentDescription="@string/undo"
+            android:src="@drawable/undo"
+            app:tint="@color/white"
+            android:tooltipText="Undo"/>
+
+        <ImageView
+            android:id="@+id/redoBtn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="40dp"
+            android:contentDescription="@string/redo"
+            android:src="@drawable/redo"
+            app:tint="@color/white"
+            android:tooltipText="Redo"/>
+
+        <ImageView
+            android:id="@+id/settings"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="40dp"
+            android:contentDescription="@string/appSettings"
+            android:src="@drawable/setting"
+            app:tint="@color/white"
+            android:tooltipText="Settings"/>
+
+        <ImageView
+            android:id="@+id/removeImage"
+            android:layout_width="30dp"
+            android:layout_height="28dp"
+            android:layout_marginStart="32dp"
+            android:contentDescription="@string/remove_image"
+            android:src="@drawable/remove_image_disabled"
+            android:tooltipText="Remove Photo"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

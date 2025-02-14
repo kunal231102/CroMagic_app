@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ChroMagic</string>
+    <string name="menu">मेनू</string>
+    <string name="selectFromGallery">गैलरी से चुनें</string>
+    <string name="takeImageWithCamera">कैमरे से चित्र लें</string>
+    <string name="selectedImage">चुना हुआ\n</string>
+    <string name="about">ऐप के बारे में</string>
+    <string name="report_bug">बग रिपोर्ट करें</string>
+    <string name="help">सहायता</string>
+    <string name="share_menu">शेयर करें</string>
+    <string name="download_menu">डाउनलोड</string>
+    <string name="plus">+</string>
+    <string name="next">अगला</string>
+    <string name="skip">छोड़ें</string>
+    <string name="get_started">शुरू करें</string>
+    <string name="instant_colorization">तत्काल रंगाई</string>
+    <string name="enhance_image">छवि सुधारक</string>
+    <string name="enhance_image_description">सिर्फ एक क्लिक के साथ, आप अब फोटो रिज़ॉल्यूशन बढ़ा सकते हैं, गुणवत्ता में सुधार कर सकते हैं और जल्दी से चित्रों को स्पष्ट कर सकते हैं।</string>
+    <string name="instant_colorization_description">डीप लर्निंग आधारित फोटो रंगाई करने वाले के साथ, आप अपनी पुरानी काली और सफेद तस्वीरों में लगातार और प्राकृतिक रंग जोड़ सकते हैं।</string>
+    <string name="remove_bg_image">पृष्ठभूमि हटाएँ</string>
+    <string name="remove_bg_image_description">सिर्फ एक क्लिक के साथ अपनी तस्वीरों से पृष्ठभूमि को तुरंत हटा दें, शानदार कटआउट गुणवत्ता और अद्भुत किनारे विवरण के साथ।</string>
+    <string name="designed_by">Designed By</string>
+    <string name="version">संस्करण 1.0.0</string>
+    <string name="aboutApp">ऐप के बारे में</string>
+    <string name="appSettings">ऐप सेटिंग्स</string>
+    <string name="redo">फिर से करें\n</string>
+    <string name="undo">पूर्ववत करें</string>
+    <string name="history">इतिहास</string>
+    <string name="colorizeImage">छवि रंगें</string>
+    <string name="sliding_images">स्लाइडिंग छवियाँ</string>
+    <string name="metadata">मेटाडेटा</string>
+    <string name="current_image">वर्तमान छवि</string>
+    <string name="change_language">भाषा बदलें</string>
+    <string name="light_mode">हल्का मोड</string>
+    <string name="photo_details">छवि विवरण</string>
+    <string name="select_photo_from_gallery">गैलरी से फ़ोटो चुनें</string>
+    <string name="take_photo_using_camera">कैमरा का उपयोग करके फ़ोटो लें</string>
+    <string name="menu_options">मेनू विकल्प</string>
+    <string name="colorize">रंगीन करें</string>
+    <string name="history_icon_desc">इतिहास</string>
+    <string name="undo_icon_desc">पूर्ववत करें</string>
+    <string name="redo_icon_desc">पुनः करें</string>
+    <string name="settings">सेटिंग्स</string>
+    <string name="about_app">ऐप के बारे में</string>
+
+</resources>
